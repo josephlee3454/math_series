@@ -21,3 +21,13 @@ def lucas_nth(n):
     return (lucas_nth(n-1) + lucas_nth(n-2))
 print(lucas_nth(2))
 
+def sum_series(n, a=0, b=1):
+  """"""
+  if n == 0:
+    return a
+  elif n == 1:
+    return b
+  else: 
+    return(sum_series(n-1, a, b) + sum_series(n-2, a, b))
+print(sum_series(5,3,3))
+  
